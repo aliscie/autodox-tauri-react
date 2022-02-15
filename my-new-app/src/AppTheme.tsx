@@ -1,21 +1,10 @@
 import * as React from 'react';
-import {useEffect, useState} from 'react';
-import MyApp, {ColorModeContext} from "./components/AppProvider";
 import {createTheme, ThemeProvider} from "@mui/material/styles";
-import PersistentDrawerLeft from "./components/side_nav";
 import "react-color-palette/lib/css/styles.css";
-import BasicPopover from "./components/Popover";
-import ColorPallet from "./components/color_pallet";
-import RichTextEditor from "./apps/autodox2/src/RichTextEditor";
-import BarButton from "./components/bar_buttons";
-import DrawerItems from "./components/drawerItems";
+import App, {ColorModeContext} from './main_components/App';
 
 
-const fs = window.require('fs')
-const path = window.require('path')
-
-function App(props: any) {
-    // const [path, setPath]:any = useState(app.getAppPath())
+function AppTheme(props: any) {
     const [mode, setMode] = React.useState<'light' | 'dark'>('light');
     const colorMode = React.useMemo(
         () => ({
@@ -94,15 +83,14 @@ function App(props: any) {
             }),
         [mode],
     );
-
     return (
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
-                <MyApp/>
+                <App/>
             </ThemeProvider>
         </ColorModeContext.Provider>
     )
 
 }
 
-export default App
+export default AppTheme

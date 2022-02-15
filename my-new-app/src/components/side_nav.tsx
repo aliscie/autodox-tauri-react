@@ -12,11 +12,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
-// const electron = window.require("electron")
-// const { app } = require('electron')
-const fs = window.require('fs')
-const path = window.require('path')
-const drawerWidth = 200;
+const drawerWidth = 300;
 
 const Main = styled('main', {shouldForwardProp: (prop) => prop !== 'open'})<{
     open?: boolean;

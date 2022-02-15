@@ -1,10 +1,10 @@
 import IconButton from "@mui/material/IconButton";
-import BasicBreadcrumbs from "./breadCrumbs";
 import * as React from "react";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import {useTheme} from "@mui/material";
-import {ColorModeContext} from "./AppProvider";
+import {ColorModeContext} from "./App";
+import BasicBreadcrumbs from "../components/breadCrumbs";
 
 const electron = window.require("electron")
 
