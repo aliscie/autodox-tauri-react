@@ -19,3 +19,6 @@ ______
 1. 🔴 = Todo = I am planing to work on this feature
 2. 🚧 = curently working in it = in progress
 3. 🚀 = Huage updates = lunching new features = chaning the strecture of the repo
+
+# Demo
+<img align="left" src="./demo.png" width="300">
