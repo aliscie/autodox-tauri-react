@@ -15,7 +15,7 @@ ______
 4. material-ui
 5. apollojs 🚧 (not used yet but coming soon)
 
-# In the repo may find emojis like these 🔴,✅,🚧, and🚀. Each one have a meaning.
+## In the repo may find emojis like these 🔴,✅,🚧, and🚀. Each one have a meaning.
 1. 🔴 = Todo = I am planing to work on this feature
 2. 🚧 = curently working in it = in progress
 3. 🚀 = Huage updates = lunching new features = chaning the strecture of the repo
