@@ -8,7 +8,6 @@ this app is Notion.so clone, roamresearch clone and obsidian clone. The main pur
 1. $`npm install -g eslint`
 1. $`cd autodox`
 1. $`npm i`
-1.⏭ $`npm update`
 1. $`npm start`
 1.⏭ note after this command you may need to run 
     1. $`npm audit fix` in case the app showed any errors.
