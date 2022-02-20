@@ -9,7 +9,7 @@ import {uiHandler} from "./ui_stores";
 export const counterSlice = createSlice({
     name: 'main',
     initialState: {
-        value: require('/Users/apple/PycharmProjects/react-tauri/src/myFile.json'),
+        value: require('../myFile.json'),
         files: getFiles(),
     },
     reducers: {

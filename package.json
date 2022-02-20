@@ -57,6 +57,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "web": "react-scripts start",
     "start": "react-scripts start&\n\ttauri dev",
     "build": "react-scripts build",
     "bundle": "react-scripts build && tauri build",
