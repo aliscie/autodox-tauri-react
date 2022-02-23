@@ -1,4 +1,4 @@
-<img align="left" src="./readmeFiles/logo.png" width="300">
+<img align="left" src="readmeFiles/logo1.png" width="300">
 
 this app is Notion.so clone, roamresearch clone and obsidian clone. The main purpose of this app is not to just clone these note taking apps but to make an all in one **Open source note taking app** with automation features.
 
