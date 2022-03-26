@@ -14,6 +14,11 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import RenameFile from "../action_components/rename_file";
+import CloudFile from "../action_components/cload_file";
+import DeleteFile from "../action_components/delete_file";
+import LongMenu from "./Menu";
+import {MenuItem} from "@mui/material";
 
 const drawerWidth = 240;
 
@@ -86,20 +91,17 @@ export default function PersistentDrawerLeft(props: any) {
                 // open={open}
             >
                 <Toolbar style={{minHeight: 0, zIndex: theme.zIndex.drawer + 1}}>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
+                    <LongMenu
                         onClick={(e: any) => {
                             !open && handleDrawerOpen()
                             open && handleDrawerClose()
                         }}
-                        edge="start"
-                        sx={{mr: 2}}
-                    >
-                        {open ? <KeyboardArrowLeftIcon/> : <MenuIcon/>}
-                    </IconButton>
+                        icon={open ? <KeyboardArrowLeftIcon/> : <MenuIcon/>} rightClick={true}>
+                        <MenuItem>Toggle side bar on mouse near</MenuItem>
+                        <MenuItem>Small side bar</MenuItem>
+                        <MenuItem>Default side bar</MenuItem>
+                    </LongMenu>
                     {props.mainbar}
-
 
                 </Toolbar>
             </AppBar>

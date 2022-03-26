@@ -27,7 +27,6 @@ import {
     createLinkPlugin,
     createListPlugin,
     createMediaEmbedPlugin,
-    createMentionPlugin,
     createNodeIdPlugin,
     createNormalizeTypesPlugin,
     createParagraphPlugin,
@@ -95,13 +94,23 @@ let components = createPlateUI({
     // tr: undefined,
     // ul: undefined,
     // underline: undefined,
+
     [ELEMENT_EXCALIDRAW]: ExcalidrawElement,
     [ELEMENT_NUMBERED]: NumberedElement,
+    // [ELEMENT_TD]: TDelement,
     [ELEMENT_CODE]: CodeElement,
 
 })
 components = withStyledPlaceHolders(components)
 components = withStyledDraggables(components, [ELEMENT_NUMBERED, ELEMENT_CODE,])
+
+// Handle multiple combobox
+// const ComboboxContainer = () => {
+//   useComboboxControls()
+//
+//   return <TagCombobox />
+// }
+
 
 const RichTextEditor = (props: any) => {
 
@@ -109,7 +118,7 @@ const RichTextEditor = (props: any) => {
         [
 
             // createMention()
-            createMentionPlugin(),
+            // createCustomMentionPlugin(),
             createSelectOnBackspacePlugin(CONFIG.selectOnBackspace),
             createParagraphPlugin(),
             createBlockquotePlugin(),
@@ -181,11 +190,9 @@ const RichTextEditor = (props: any) => {
         //     console.log(e)
         // }
     }, [props.initialValue])
+
     var title: string = props.initialValue[0].children[0].text
     return (<DndProvider backend={HTML5Backend}>
-            <span>
-            {`${JSON.stringify(props.initialValue)}`}
-        </span>
             <Plate
 
                 onChange={(changes) => {
@@ -208,9 +215,9 @@ const RichTextEditor = (props: any) => {
 
                 <MarkBallonToolbar/>
 
-                <MentionCombobox
-                    items={MENTIONABLES}
-                />
+                {/*<MentionCombobox*/}
+                {/*    items={MENTIONABLES}*/}
+                {/*/>*/}
             </Plate>
         </DndProvider>
     )

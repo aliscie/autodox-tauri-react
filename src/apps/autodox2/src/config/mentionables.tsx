@@ -1,11 +1,11 @@
 // import { ComboboxItemData } from '@udecode/plate'
 
 export const MENTIONABLES: any = [
-  { key: '0', text: 'Aayla Secura' },
-  { key: '1', text: 'Adi Gallia' },
+  { key: '0', text: 'Ali sci' },
+  { key: '1', text: 'Admin' },
   {
     key: '2',
-    text: 'Admiral Dodd Rancit',
+    text: 'John',
   },
   {
     key: '3',
