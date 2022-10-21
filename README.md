@@ -30,4 +30,3 @@ this app is Notion.so clone, roamresearch clone and obsidian clone. The main pur
 
 # Demo
 <img align="left" src="./readmeFiles/demo.png" width="300">
-change
